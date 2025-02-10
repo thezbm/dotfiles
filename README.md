@@ -6,7 +6,7 @@
 ## Installation
 
 ``` shell
-git clone https://github.com/gabezbm/dotfiles.git ~/dotfiles
-cd dotfiles
+git clone --recurse-submodules https://github.com/thezbm/dotfiles.git ~/dotfiles
+cd ~/dotfiles
 stow .
 ```
