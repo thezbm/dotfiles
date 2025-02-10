@@ -72,6 +72,7 @@ ZSH_CUSTOM=$ZSH/../.oh-my-zsh-custom
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    fzf
     zoxide
     starship
     zsh-autosuggestions
@@ -82,4 +83,5 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-source $HOME/.zshrc-custom
+EXTRA_CONFIG=$HOME/.zshrc-custom
+[[ -f $EXTRA_CONFIG ]] && source $EXTRA_CONFIG || true
